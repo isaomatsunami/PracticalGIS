@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <HISTORY saga-version="2.3.1">
+    <MODULE library="statistics_kriging" id="0" name="Ordinary Kriging">
+      <OPTION type="table_field" id="FIELD" name="Attribute" index="0">testRaster</OPTION>
+      <OPTION type="choice" id="TQUALITY" name="Type of Quality Measure" index="0">standard deviation</OPTION>
+      <OPTION type="boolean" id="LOG" name="Logarithmic Transformation">TRUE</OPTION>
+      <OPTION type="boolean" id="BLOCK" name="Block Kriging">TRUE</OPTION>
+      <OPTION type="double" id="DBLOCK" name="Block Size">100.000000</OPTION>
+      <OPTION type="double" id="VAR_MAXDIST" name="Maximum Distance">-1.000000</OPTION>
+      <OPTION type="integer" id="VAR_NCLASSES" name="Lag Distance Classes">100</OPTION>
+      <OPTION type="integer" id="VAR_NSKIP" name="Skip">1</OPTION>
+      <OPTION type="text" id="VAR_MODEL" name="Model">a + b * x</OPTION>
+      <OPTION type="choice" id="TARGET_DEFINITION" name="Target Grid System" index="0">user defined</OPTION>
+      <OPTION type="double" id="TARGET_USER_SIZE" name="Cellsize">0.010000</OPTION>
+      <OPTION type="double" id="TARGET_USER_XMIN" name="Left">35.000000</OPTION>
+      <OPTION type="double" id="TARGET_USER_XMAX" name="Right">135.000000</OPTION>
+      <OPTION type="double" id="TARGET_USER_YMIN" name="Bottom">35.108800</OPTION>
+      <OPTION type="double" id="TARGET_USER_YMAX" name="Top">35.108800</OPTION>
+      <OPTION type="choice" id="TARGET_USER_FITS" name="Fit" index="0">nodes</OPTION>
+      <OPTION type="choice" id="SEARCH_RANGE" name="Search Range" index="0">local</OPTION>
+      <OPTION type="double" id="SEARCH_RADIUS" name="Maximum Search Distance">1000.000000</OPTION>
+      <OPTION type="choice" id="SEARCH_POINTS_ALL" name="Number of Points" index="0">maximum number of nearest points</OPTION>
+      <OPTION type="integer" id="SEARCH_POINTS_MIN" name="Minimum">1</OPTION>
+      <OPTION type="integer" id="SEARCH_POINTS_MAX" name="Maximum">20</OPTION>
+      <OPTION type="choice" id="SEARCH_DIRECTION" name="Direction" index="0">all directions</OPTION>
+      <INPUT type="shapes" id="POINTS" name="Points">
+        <FILE>/Users/isao/PracticalGIS/testData/random200Values.shp</FILE>
+      </INPUT>
+      <OUTPUT type="grid" id="PREDICTION" name="Prediction">random200Values.testRaster [Ordinary Kriging]</OUTPUT>
+    </MODULE>
+  </HISTORY>
+  <SOURCE>
+    <FILE>/Users/isao/PracticalGIS/testData/ordinaryKriging.sgrd</FILE>
+    <DATABASE></DATABASE>
+    <PROJECTION>
+      <OGC_WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]]</OGC_WKT>
+      <PROJ4>+proj=longlat +a=6378137.000000 +b=6356752.314245 +no_defs</PROJ4>
+      <EPSG>-1</EPSG>
+    </PROJECTION>
+  </SOURCE>
+  <DESCRIPTION></DESCRIPTION>
+</SAGA_METADATA>

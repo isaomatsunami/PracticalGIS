@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <HISTORY saga-version="2.3.2">
+    <MODULE library="shapes_grid" id="0" name="Add Grid Values to Points">
+      <OPTION type="choice" id="RESAMPLING" name="Resampling" index="2">Bicubic Spline Interpolation</OPTION>
+      <INPUT type="shapes" id="SHAPES" name="Points">
+        <FILE>C:/Users/isao/Desktop/PracticalGIS/testData/grid.shp</FILE>
+      </INPUT>
+      <INPUT_LIST type="grid_list" id="GRIDS" name="Grids">
+        <testRaster type="grid_list" id="GRIDS" name="Grids">
+          <FILE>C:/Users/isao/Desktop/PracticalGIS/testData/testRaster.sgrd</FILE>
+        </testRaster>
+      </INPUT_LIST>
+      <OUTPUT type="shapes" id="RESULT" name="Result">grid</OUTPUT>
+    </MODULE>
+  </HISTORY>
+  <SOURCE>
+    <FILE></FILE>
+    <DATABASE>
+      <FIELDS>
+        <FIELD TYPE="DOUBLE">testRaster</FIELD>
+      </FIELDS>
+    </DATABASE>
+    <PROJECTION>
+      <OGC_WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]]</OGC_WKT>
+      <PROJ4>+proj=longlat +a=6378137.000000 +b=6356752.314245 +no_defs</PROJ4>
+      <EPSG>-1</EPSG>
+    </PROJECTION>
+  </SOURCE>
+  <DESCRIPTION></DESCRIPTION>
+</SAGA_METADATA>
